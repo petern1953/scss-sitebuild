@@ -1,0 +1,124 @@
+#bootstrap-overrides {
+    margin-top: -60px;
+}
+
+#download {
+    top: -300px;
+    transition: top 3s;
+}
+
+// .site__title {
+//     color: rgb(253, 200, 68);
+// }
+
+// .site__title:hover {
+//     color: rgb(255, 255, 255);
+// }
+
+.site {
+    &__title {
+        color: rgb(253, 200, 68);
+
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__menu {
+        font-family: "Catamaran", Helvetica, Arial, sans-serif;
+    }
+
+    &__button {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+
+        &:hover {
+            background-color: #fdcc52;
+        }
+    }
+
+    &__upperMenuLink {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+    }
+
+    &__footer {
+        font-family: "Muli", Helvetica, Arial, sans-serif;
+    }
+}
+
+.newAgeSection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-image: url("/dist/img/bg-pattern.png"), linear-gradient(to right, rgb(218, 36, 49), rgba(122, 67, 151));
+    background-repeat: repeat, no-repeat;
+    min-height: 800px;
+    max-height: 1140px;
+
+    &__row {
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        @media only screen and (max-width: 991px) {
+            position: relative;
+            width: 100%;
+            // text-align: center;
+        }
+
+        @media only screen and (min-width: 992px) {
+            position: relative;
+            width: 50%;
+        }
+    }
+
+    &__text {
+        // text-align: center;
+        color: #fff;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+    }
+
+    // &__button {
+    //     col-4 
+    //     offset-4 col-lg-6 offset-lg-0 text-center text-white border border-white rounded-pill mx-lg-3 mt-5 px-5 py-3 site__button">-->
+    // }
+}
+
+p:not(.nav__text) {
+    font-family: "Muli", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem;
+}
+
+.doubleMobilImg {
+    /* width: 432px; */
+    width: 360px;
+    /* height: 868px; */
+    height: 770px;
+    background-image: url("/dist/img/demo-screen-1.jpg"), url("/dist/img/phone.png");
+    /* background-size: 90%, cover; */
+    /* background-size: 90%, contain; */
+    background-size: 90%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}

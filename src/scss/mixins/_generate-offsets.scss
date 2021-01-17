@@ -1,0 +1,11 @@
+// offset-1 ... offset-12
+@mixin generate-offsets {
+    $grid-size: var(grid-size);
+    // $postfix: none;
+
+    @for $i from 1 through $grid-size {
+        .offset-#{$i} {
+            margin-left: get-column-width($i / $grid-size);
+        }
+    }
+}

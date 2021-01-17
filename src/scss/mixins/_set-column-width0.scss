@@ -25,10 +25,4 @@
             width: $width;
         }
     }
-
-    @else if $number==5 {
-        @include desktop-up {
-            width: $width;
-        }
-    }
 }

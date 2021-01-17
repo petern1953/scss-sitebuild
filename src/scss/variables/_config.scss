@@ -13,6 +13,7 @@ $config: (grid: (size: 12,
             mobile: sm, // column--mobile-6
             tablet: md, // column--tablet-4
             desktop: lg // column-desktop-3
+            // none: "" // column-3
         ),
         padding: (default: 10px,
             mobile: 12px,
