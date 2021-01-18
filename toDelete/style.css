@@ -1,0 +1,149 @@
+/* @font-face {font-family: "Catamaran";
+src: url(/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+} */
+body {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.nav {
+  background: #fff;
+  box-shadow: 0 0 10px #555;
+  display: flex;
+  justify-content: center;
+}
+.nav.upper__menu {
+  background-color: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.nav__container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .nav__container {
+    align-items: center;
+  }
+}
+.nav__container.upper__menu {
+  width: 60%;
+}
+.nav__list {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+}
+.nav__menu-box {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin: 0.5rem;
+}
+@media screen and (min-width: 40rem) {
+  .nav__menu-box {
+    display: none;
+  }
+}
+.nav__text {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 0 0 0 0.75rem;
+  padding: 0.5rem 0;
+  text-align: left;
+  display: inline-block;
+}
+.nav__item {
+  text-align: center;
+}
+.nav__link {
+  color: #000;
+  display: block;
+  line-height: 1rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 40rem) {
+  .nav__link {
+    margin: 1.1rem 0;
+  }
+}
+.nav__link:hover {
+  color: #fff;
+  background: #777;
+}
+.nav__hamburger-checkbox {
+  display: none;
+}
+.nav__hamburger-checkbox:checked + .nav__list {
+  display: flex;
+}
+.nav__hamburger-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  height: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+  width: 1rem;
+}
+@media screen and (min-width: 40rem) {
+  .nav__hamburger-label {
+    display: none;
+  }
+}
+.nav__hamburger-line {
+  background: #000;
+  display: block;
+  height: 2px;
+  width: 1rem;
+}
+
+.upper__menu {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+.site__title {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  align-self: flex-start;
+  margin: 0.75rem;
+  padding-right: auto;
+  color: #fdcc52;
+}
+.site__title:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
