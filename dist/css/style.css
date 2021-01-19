@@ -992,7 +992,6 @@ body {
 
 .downloadSection {
   background-color: #fdc844;
-  min-height: 480px;
   text-align: center;
 }
 
@@ -1003,66 +1002,71 @@ body {
 }
 
 .download__title {
+  margin-top: 10rem;
+  margin-bottom: 0;
   font-size: 4rem;
   font-weight: 100;
+  line-height: 5rem;
 }
 
 .download__lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  padding: 0 3rem;
 }
 
 .download__stores {
   width: 240px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: center;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
   .download__stores {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    width: 560px;
     flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
     max-width: 50%;
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
     padding-top: 1rem;
   }
 }
 .download__store--upper {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  margin-left: 33.333333%;
+  width: 240px;
   padding-right: 0.25rem;
   padding-left: 0.25rem;
 }
 
 @media (min-width: 992px) {
   .download__store--upper {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-    margin-left: 25%;
+    max-width: 45%;
+    margin-left: 0;
     padding-top: 1rem;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .download__store--lower {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  margin-left: 0;
+  width: 100%;
   padding-right: 0.25rem;
   padding-left: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 10rem;
+  margin-left: 0;
 }
 
 @media (min-width: 992px) {
   .download__store--lower {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-    margin-left: 25%;
+    max-width: 45%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 1rem;
   }
 }
@@ -1071,6 +1075,11 @@ body {
   margin-top: 1rem;
 }
 
+@media (min-width: 992px) {
+  .download__img--2 {
+    margin-top: 0;
+  }
+}
 .card__icon {
   color: #b2325d;
   font-size: 4rem;
