@@ -359,15 +359,15 @@
 
 @font-face {
   font-family: "Catamaran";
-  src: url(/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+  src: url(/dist/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Lato";
-  src: url(/assets/fonts/Lato/Lato-Regular.ttf);
+  src: url(/dist/fonts/Lato/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "Muli";
-  src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+  src: url(/dist/fonts/Mulish/Mulish-VariableFont_wght.ttf);
 }
 body {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
@@ -881,56 +881,90 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url("/dist/img/bg-pattern.png"), linear-gradient(to right, #da2431, #7a4397);
   background-repeat: repeat, no-repeat;
   min-height: 800px;
-  max-height: 1140px;
 }
 
+@media only screen and (min-width: 992px) {
+  .newAgeSection {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 .newAgeSection__row {
   display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 
-@media only screen and (max-width: 991px) {
-  .newAgeSection__row {
-    position: relative;
-    width: 100%;
-  }
-}
 @media only screen and (min-width: 992px) {
   .newAgeSection__row {
     position: relative;
-    width: 50%;
+    width: 33.33333vw;
+    -ms-flex-align: left;
+    align-items: left;
+    margin-left: 16.66666667vw;
   }
 }
 .newAgeSection__text {
   color: #fff;
   padding-top: 3rem;
   padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 3.2rem;
+  text-align: center;
 }
 
-@media (max-width: 991px) {
-  .newAgeSection__text {
-    text-align: center;
-  }
-}
 @media (min-width: 992px) {
   .newAgeSection__text {
+    margin-top: 0;
+    margin-right: 3rem;
+    padding-top: 0;
     text-align: left;
   }
 }
-p:not(.nav__text) {
+.newAgeSection__button {
+  border: 1px solid #dee2e6;
+  border-radius: 50rem;
+  margin-left: 0;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .newAgeSection__button {
+    text-align: left;
+    margin-right: auto;
+  }
+}
+.newAgeSection__button:hover {
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+}
+
+.newAgeSection p:not(.nav__text) {
   font-family: "Muli", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
+}
+
+.newAgeSection__img {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .mt-5,
