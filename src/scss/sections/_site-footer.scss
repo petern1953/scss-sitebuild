@@ -7,8 +7,10 @@
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        // margin-right: auto;
+        margin-right: 0;
+        // margin-left: auto;
+        margin-left: 0;
         color: #fff;
 
         p {
@@ -32,6 +34,7 @@
 
     &__text {
         text-align: center;
+        margin-top: 0;
         margin-bottom: 0;
         padding-top: 1.5rem;
     }
@@ -43,14 +46,20 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-bottom: 0;
+
+    margin: 0;
     list-style: none;
     justify-content: center;
     padding-bottom: 1.5rem;
+    background-color: #222;
+    padding-bottom: 0;
+    box-shadow: none;
+
 
     &__link {
         display: block;
-        padding: 0.25rem 1rem 0.5rem;
+        padding: 0.25rem .5rem 0.25rem;
+        margin: 0.25rem 0 1rem;
     }
 }
 

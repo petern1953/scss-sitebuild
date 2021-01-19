@@ -1257,7 +1257,7 @@ p:not(.nav__text) {
   background-color: #fdc844;
   height: 486px;
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   border-radius: 0.3rem;
   text-align: center;
 }
@@ -1355,8 +1355,8 @@ p:not(.nav__text) {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0;
+  margin-left: 0;
   color: #fff;
 }
 
@@ -1380,6 +1380,7 @@ p:not(.nav__text) {
 
 .siteFooter__text {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 0;
   padding-top: 1.5rem;
 }
@@ -1390,15 +1391,19 @@ p:not(.nav__text) {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 0;
+  margin: 0;
   list-style: none;
   justify-content: center;
   padding-bottom: 1.5rem;
+  background-color: #222;
+  padding-bottom: 0;
+  box-shadow: none;
 }
 
 .nav__link {
   display: block;
-  padding: 0.25rem 1rem 0.5rem;
+  padding: 0.25rem 0.5rem 0.25rem;
+  margin: 0.25rem 0 1rem;
 }
 
 .sr-only {
