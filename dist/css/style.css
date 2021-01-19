@@ -1105,11 +1105,14 @@ body {
 }
 
 .features__head {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  border-radius: 0.3rem;
+  padding: 2rem auto 0;
 }
 
+@media (min-width: 992px) {
+  .features__head {
+    margin-bottom: 2rem;
+  }
+}
 .features__title {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
   font-size: 4rem;
@@ -1130,37 +1133,39 @@ body {
   width: 140px;
   color: #6c757d;
   margin-top: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .features__article {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
-  margin: 0 auto;
+  width: 66.6667%;
+  margin: 5rem auto 0;
+  padding: 0 2.5rem 0 0;
   justify-content: center;
 }
 
 @media (min-width: 992px) {
   .features__article {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-top: -3rem;
-    margin-left: 25%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 83.3333%;
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+    margin-left: 16.6667%;
   }
 }
 .features__img {
-  /* width: 432px; */
+  position: relative;
   width: 360px;
-  /* height: 868px; */
   height: 770px;
   background-image: url("/dist/img/demo-screen-1.jpg"), url("/dist/img/phone.png");
-  /* background-size: 90%, cover; */
-  /* background-size: 90%, contain; */
   background-size: 90%, 100%;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -1180,27 +1185,20 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  -ms-flex: 0 0 66.666667%;
-  flex: 0 0 66.666667%;
-  max-width: 66.666667%;
-  margin-left: 16.666667%;
   text-align: center;
 }
 
 @media (min-width: 992px) {
   .features__items {
+    flex-direction: row;
+    width: 80%;
     margin-top: 3rem;
     margin-left: 0;
+    margin-right: 20%;
   }
 }
 .features__card {
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 16.666667%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1208,12 +1206,13 @@ body {
   background-color: #fff;
   background-clip: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  width: 18rem;
+  width: 24rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
   .features__card {
+    width: 50%;
     margin-left: 0;
   }
 }
@@ -1221,24 +1220,35 @@ body {
   /* font-family: 'simple-line-icons'; */
   color: #b2325d;
   font-size: 4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .card__body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+.card__title {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
 }
 
 .card__text {
   color: #6c757d;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10rem;
 }
 
 .stopWaitingSection {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
   color: #fff;
 }
 
@@ -1246,7 +1256,7 @@ body {
   content: "";
   position: absolute;
   background-image: url("/dist/img/bg-cta.jpg");
-  background-position: 70%;
+  background-position-x: 70%;
   filter: brightness(50%);
   width: 100%;
   height: 920px;
