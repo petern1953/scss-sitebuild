@@ -7,14 +7,6 @@
     transition: top 3s;
 }
 
-// .site__title {
-//     color: rgb(253, 200, 68);
-// }
-
-// .site__title:hover {
-//     color: rgb(255, 255, 255);
-// }
-
 .site {
     &__title {
         color: rgb(253, 200, 68);
@@ -30,6 +22,7 @@
 
     &__button {
         font-family: "Lato", Helvetica, Arial, sans-serif;
+        transition: background-color 3s;
 
         &:hover {
             background-color: #fdcc52;
@@ -50,8 +43,6 @@
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    // -ms-flex-align: end;
-    // align-items: flex-end;
     -ms-flex-align: center;
     align-items: center;
     // justify-content: center;
@@ -63,9 +54,7 @@
     @media only screen and (min-width: 992px) {
         -ms-flex-direction: row;
         flex-direction: row;
-
     }
-
 
     &__row {
         display: flex;
@@ -85,9 +74,7 @@
             width: 33.33333vw;
             -ms-flex-align: left;
             align-items: left;
-
             margin-left: 16.66666667vw;
-
         }
     }
 
@@ -99,9 +86,7 @@
         font-size: 2.5rem;
         font-weight: 100;
         line-height: 3.2rem;
-        // @media (max-width: 991px) {
         text-align: center;
-        // }
 
         @media (min-width: 992px) {
             margin-top: 0;
@@ -112,14 +97,9 @@
     }
 
     &__button {
-        //     col-4 
-        //     offset-4 col-lg-6 offset-lg-0 text-center text-white border border-white rounded-pill mx-lg-3 mt-5 px-5 py-3 site__button">-->
         border: 1px solid #dee2e6;
         border-radius: 50rem;
         margin-left: 0;
-        // margin-right: 1rem;
-        // margin-right: auto;
-        // margin-top: 3rem;
         padding-left: 6rem;
         padding-right: 6rem;
         padding-top: 1.2rem;
@@ -135,9 +115,9 @@
         &:hover {
             background-color: #fdcc52;
             border-color: #fdcc52;
+            transition: all .3s;
         }
     }
-
 
     p:not(.nav__text) {
         font-family: "Muli", Helvetica, Arial, sans-serif;

@@ -65,7 +65,7 @@ body {
     border-radius: 3px;
     margin: .5rem;
 
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 40em) {
       display: none;
     }
   }
@@ -91,7 +91,7 @@ body {
     text-decoration: none;
     font-size: .8rem;
 
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 40em) {
       margin: 1.1rem 0;
     }
 
@@ -121,7 +121,7 @@ body {
       // width: 1.5rem;
       width: 1rem;
 
-      @media screen and (min-width: 40rem) {
+      @media screen and (min-width: 40em) {
         display: none;
       }
     }

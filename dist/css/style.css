@@ -763,7 +763,7 @@ body {
   border-radius: 3px;
   margin: 0.5rem;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 40em) {
   .nav__menu-box {
     display: none;
   }
@@ -787,7 +787,7 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 40em) {
   .nav__link {
     margin: 1.1rem 0;
   }
@@ -811,7 +811,7 @@ body {
   padding: 0.75rem 0.75rem 0.75rem 0.5rem;
   width: 1rem;
 }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 40em) {
   .nav__hamburger-label {
     display: none;
   }
@@ -862,6 +862,7 @@ body {
 
 .site__button {
   font-family: "Lato", Helvetica, Arial, sans-serif;
+  transition: background-color 3s;
 }
 
 .site__button:hover {
@@ -954,6 +955,7 @@ body {
 .newAgeSection__button:hover {
   background-color: #fdcc52;
   border-color: #fdcc52;
+  transition: all 0.3s;
 }
 
 .newAgeSection p:not(.nav__text) {
@@ -1151,10 +1153,12 @@ body {
   .features__article {
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 83.3333%;
+    justify-content: space-evenly;
+    width: 75%;
     margin-top: 3rem;
     margin-bottom: 4.5rem;
-    margin-left: 16.6667%;
+    margin-left: 12.5%;
+    padding: 0;
   }
 }
 .features__img {
@@ -1170,6 +1174,9 @@ body {
 
 @media (min-width: 992px) {
   .features__img {
+    display: inline-block;
+    width: 33%;
+    max-width: 360px;
     margin-top: -1.5rem;
     margin-left: 0;
   }
@@ -1191,10 +1198,11 @@ body {
 @media (min-width: 992px) {
   .features__items {
     flex-direction: row;
-    width: 80%;
+    width: 66.6667%;
     margin-top: 3rem;
     margin-left: 0;
-    margin-right: 20%;
+    margin-right: 0;
+    padding: 0;
   }
 }
 .features__card {
@@ -1239,6 +1247,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 992px) {
+  .card__title {
+    font-size: 1.8rem;
+  }
+}
 .card__text {
   color: #6c757d;
   font-size: 1.5rem;
@@ -1246,6 +1259,14 @@ body {
   margin-bottom: 10rem;
 }
 
+@media (min-width: 992px) {
+  .card__text {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .stopWaitingSection {
   display: -ms-flexbox;
   display: flex;
